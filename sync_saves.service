@@ -1,0 +1,5 @@
+[Unit]
+Description=Backup emudeck saves
+
+[Service]
+ExecStart=/home/deck/scripts/sync_saves.sh

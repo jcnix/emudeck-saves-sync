@@ -8,12 +8,10 @@ This script relies on [rclone](https://rclone.org), you will need to download it
 ```
 ~/Applications/rclone config
 ```
-
-
-Start and enable the systemd timer.  
+4. Start and enable the systemd timer.
 ```
-systemctl enable sync_saves.timer
-systemctl start sync_saves.timer
+systemctl --user enable sync_saves.timer
+systemctl --usr start sync_saves.timer
 ```
 
 For the initial sync, you will need to run the command in `sync_saves.sh` with the `--resync` flag as shown below. This is so rclone can create a cache it needs for the bidirectional sync.  

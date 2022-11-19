@@ -11,11 +11,11 @@ This script relies on [rclone](https://rclone.org), you will need to download it
 4. Start and enable the systemd timer.
 ```
 systemctl --user enable sync_saves.timer
-systemctl --usr start sync_saves.timer
+systemctl --user start sync_saves.timer
 ```
 
 For the initial sync, you will need to run the command in `sync_saves.sh` with the `--resync` flag as shown below. This is so rclone can create a cache it needs for the bidirectional sync.  
 I chose to do a bidirectional sync so I could sync saves from a PC to the same location and have those files synced to my Steam Deck.
 ```
-rclone bisync --resync --copy-links Path1 Path2
+~/Applications/rclone bisync --resync --copy-links Path1 Path2
 ```

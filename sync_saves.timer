@@ -2,7 +2,7 @@
 Description=Backup emudeck saves daily
 
 [Timer]
-OnCalendar=daily
+OnCalendar=hourly
 Persistent=true
 
 [Install]
